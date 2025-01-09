@@ -23,12 +23,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 @RestController
 @RequestMapping("/api/items")
 @CrossOrigin(origins = "http://127.0.0.1:5500")
-public class ItemController {
+public class ItemRestController {
 
   private ItemService itemService;
 
   // @Autowired
-  public ItemController(ItemService itemService) {
+  public ItemRestController(ItemService itemService) {
     this.itemService = itemService;
   }
 
